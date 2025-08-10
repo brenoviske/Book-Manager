@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Book Manager </title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <main>
+        <h1> Book Manager</h1>
+        <table>
+            <tr>
+                <th> Title </th>
+                <th> Genre </th>
+                <th> Status </th>
+            </tr>
+            {% for book in books %}
+                <tr>
+                    <td>{{ book.title }}</td>
+                    <td>{{ book.genre }}</td>
+                    <td>
+                        <p> {{ book.status }}</p>
+                        <a href="/update/{{ book.id }}"> Update</a>
+                        <br>
+                        <a href="/delete/{{ book.id }}"> Delete </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+        <form action="/" method="POST">
+            <input type="text" placeholder="Add the name of the book" name="book" required>
+            <input type="text" placeholder="Add Book's genre" name="genre" required>
+            <input type="text" placeholder="Add it's current status" name = 'status' required >
+            <button type="submit"> Add Book </button>
+        </form>
+    </main>
+</body>
+</html>

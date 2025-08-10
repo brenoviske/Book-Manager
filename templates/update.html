@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Read Books</title>
+    <link rel="stylesheet" href="../static/book_read.css">
+</head>
+<body>
+    <main>
+        <h1> Changer book status </h1>
+        <form o method="POST">
+            <input type="text" value="{{ book.status }}" name="status" required>
+            <button type="submit"> Update Status </button>
+        </form>
+    </main>
+</body>
+</html>
