@@ -1,0 +1,105 @@
+     
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+
+
+h1{
+    text-align: center;
+    color: black;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 50px;
+        
+}
+
+input{
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid black;
+    font-family: Ubuntu;
+    width: 200px;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 8px 8px cyan;
+    border: solid rgba(0, 0, 0, 0.254);
+    width: 500px ;
+}
+
+tr{
+    border-bottom: solid rgba(0, 0, 0, 0.254);
+    padding: 10px;
+    border-right: solid rgba(0, 0, 0, 0.254);
+}
+
+th{
+    height: 30px;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-weight: bold;
+    border-right: solid rgba(0, 0, 0, 0.254);
+}
+
+td{
+    text-align: center;
+    padding: 5px;
+    font-family: Ubuntu;
+    font-size: 15px;
+    border-right: solid rgba(0, 0, 0, 0.254);
+    width: 200px;
+}
+        
+td a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    transition: transform 500ms ease-in-out;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+td a:hover{
+    text-decoration: 3px underline cyan;
+    transform: scale(1.3);
+}
+button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: solid white;
+    border-radius: 10px;
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
