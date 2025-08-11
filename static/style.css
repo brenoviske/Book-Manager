@@ -28,6 +28,7 @@ input{
     border: solid black;
     font-family: Ubuntu;
     width: 200px;
+    box-shadow: 3px 3px cyan;
 }
 
 table{
@@ -79,6 +80,8 @@ td a:hover{
     text-decoration: 3px underline cyan;
     transform: scale(1.3);
 }
+
+
 button{
     padding: 10px;
     background-color: black;
@@ -91,7 +94,7 @@ button{
 
 form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
