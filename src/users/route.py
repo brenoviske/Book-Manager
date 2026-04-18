@@ -7,6 +7,7 @@ from sqlalchemy.orm import Session
 from src.users.model import User
 from src.users.controller import UserController
 from src.database.config import get_db
+from src.auth.security import hashing_password
 
 router = APIRouter()
 
@@ -38,7 +39,7 @@ def add(
     new_user = User(
         email = new_user.email,
         username=new_user.username,
-        password=new_user.password
+        password= hashing_password(new_user.password)
     )
 
     return UserController.add(new_user,db)
