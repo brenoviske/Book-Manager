@@ -1,5 +1,6 @@
 from sqlalchemy.orm import Session
 from src.users.model import User
+from src.auth.security import check_password
 
 
 class UserRepo:
